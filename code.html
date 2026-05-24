@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>hanauta sweets &amp; cacao</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&amp;family=Hanken+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary": "#ffffff",
+                    "secondary": "#54634b",
+                    "surface-container-low": "#f5f3ee",
+                    "secondary-fixed": "#d7e8ca",
+                    "outline-variant": "#d2c4bc",
+                    "inverse-primary": "#dec1af",
+                    "on-error-container": "#93000a",
+                    "surface-tint": "#705a4c",
+                    "on-error": "#ffffff",
+                    "primary-container": "#3d2b1f",
+                    "on-secondary-fixed": "#121f0d",
+                    "background": "#fbf9f4",
+                    "on-surface-variant": "#4f453f",
+                    "surface-container-high": "#eae8e3",
+                    "on-secondary-fixed-variant": "#3d4b35",
+                    "surface-container-highest": "#e4e2dd",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed-variant": "#574335",
+                    "primary-fixed": "#fbddca",
+                    "tertiary-fixed-dim": "#cbc6ba",
+                    "tertiary-fixed": "#e8e2d6",
+                    "secondary-fixed-dim": "#bbccaf",
+                    "on-secondary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "on-background": "#1b1c19",
+                    "primary-fixed-dim": "#dec1af",
+                    "inverse-on-surface": "#f2f1ec",
+                    "on-tertiary-fixed-variant": "#4a473e",
+                    "on-primary-fixed": "#28180d",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "surface-variant": "#e4e2dd",
+                    "on-surface": "#1b1c19",
+                    "tertiary": "#1c1a13",
+                    "surface-bright": "#fbf9f4",
+                    "on-secondary-container": "#5a6951",
+                    "tertiary-container": "#312f27",
+                    "surface": "#fbf9f4",
+                    "on-tertiary-fixed": "#1e1c14",
+                    "secondary-container": "#d7e8ca",
+                    "primary": "#26170c",
+                    "outline": "#81756e",
+                    "surface-container": "#f0eee9",
+                    "surface-dim": "#dbdad5",
+                    "on-tertiary-container": "#9b968c",
+                    "on-primary-container": "#ac9181",
+                    "inverse-surface": "#30312e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "container-max-width": "1280px",
+                    "unit": "8px",
+                    "gutter": "24px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "body-md": [
+                            "Hanken Grotesk"
+                    ],
+                    "label-md": [
+                            "Hanken Grotesk"
+                    ],
+                    "headline-md": [
+                            "EB Garamond"
+                    ],
+                    "headline-sm": [
+                            "EB Garamond"
+                    ],
+                    "body-lg": [
+                            "Hanken Grotesk"
+                    ],
+                    "display-lg-mobile": [
+                            "EB Garamond"
+                    ],
+                    "display-lg": [
+                            "EB Garamond"
+                    ]
+            },
+            "fontSize": {
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-md": [
+                            "14px",
+                            {
+                                    "lineHeight": "1.0",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-md": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "headline-sm": [
+                            "24px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "display-lg-mobile": [
+                            "36px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "display-lg": [
+                            "48px",
+                            {
+                                    "lineHeight": "1.1",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "500"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        .soft-soil-shadow {
+            box-shadow: 0 16px 32px -12px rgba(61, 43, 31, 0.08);
+        }
+        .grain-overlay::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: url('data:image/svg+xml;utf8,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)" opacity="0.02"/%3E%3C/svg%3E');
+            pointer-events: none;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md relative antialiased selection:bg-secondary-container selection:text-primary">
+<!-- TopNavBar -->
+<nav class="docked full-width top-0 sticky z-50 backdrop-blur-md shadow-sm shadow-[0_16px_32px_-12px_rgba(61,43,31,0.08)] bg-surface/90">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto">
+<div class="flex items-center gap-4">
+<a class="font-headline-md text-headline-md font-bold flex items-center gap-2 text-primary" href="#">
+<img alt="hanauta sweets &amp; cacao" class="h-16 w-auto object-contain" src="logo.jpg"/>
+</a>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-md transition-all duration-300 scale-95 active:scale-90 transition-transform text-primary/90 hover:text-[#F4A460]" href="#story">私たちのこだわり</a>
+<a class="font-label-md transition-all duration-300 scale-95 active:scale-90 transition-transform text-primary/90 hover:text-[#F4A460]" href="#specials">おすすめ商品</a>
+<a class="font-label-md transition-all duration-300 scale-95 active:scale-90 transition-transform text-primary/90 hover:text-[#F4A460]" href="#blog">読みもの</a>
+<a class="font-label-md transition-all duration-300 scale-95 active:scale-90 transition-transform text-primary/90 hover:text-[#F4A460]" href="#visit">店舗情報</a>
+</div>
+</div>
+</nav>
+<main class="grain-overlay relative z-10">
+<!-- Hero Section -->
+<section class="w-full bg-center bg-cover bg-no-repeat relative" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCtNlIlYuqnU1zUl4NazGxm6gqvJ1Hw3d8zq1lDnlbcyOEWSmWAERQyoPQfc3rOXHZyHt4q7MZHr5uiYnMOkqXnVT_94g357-pIUWXqxbq3E_B_N6g45izrMjUc1RC54Uxz0iGZ8W0kaTaN4T3n-IHzgMhxc5R6EgxwaYpHl1Nx7nVaQs3HwzB0v4UTyWYDf0wox7xfbf9eFGiUqSi5KMDyh5ImEkJgMV5eJv7SqMSH7em-MmtE92jDIG6FpcW6bOlw4wUkjWF39FU');">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto py-24 md:py-32 flex flex-col md:flex-row items-center gap-12 relative z-10">
+<div class="w-full md:w-1/2 flex flex-col items-start gap-8 relative z-10">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary leading-tight">
+                なんでもない日を、<br/>ちょっといい日に。
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">
+                厳選したオーガニックカカオと、地元の自然豊かな素材から生まれる焼き菓子。<br class="hidden md:inline">一口ごとに広がる優しい味わいが、あなたの日常に小さな温もりを添えられますように。
+            </p>
+<a class="bg-[#F4A460] text-primary-container font-label-md px-10 py-4 rounded-full hover:bg-[#e09355] transition-all duration-300 shadow-lg shadow-[#F4A460]/20 flex items-center gap-3 active:scale-95 group" href="#story">
+                私たちのこだわり <span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="w-full md:w-1/2 relative h-[500px] md:h-[700px] rounded-xl overflow-hidden soft-soil-shadow">
+<img alt="Artisanal chocolate and madeleines arranged on a rustic linen cloth." class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uiS-SNUkElaKGWUmLjp5ybs3QpYP_aoLpaiq-LBq1Rm4TwZ2QFCPAgavhHENSlFSAYBdbcFjPdugBp0bIIzxG_BUCtKYgq7IgJ7FVk4JiDrTrdlBkHuNbtVnuPM0jNBogqmkDxdJinEQhQxznucg6coxA6BChT6fxpBJ92PN0o75bllTaVr48RTmV6gZml6BFYTYYxdv1ehnnz5UFPWJAmlv4mCRIMCwZSxTXu4vA6FB8aZGxHFxhVvtPU"/>
+</div>
+</div>
+</section>
+<!-- Our Story -->
+<section class="bg-secondary-container/10 py-24" id="story">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-1/2 order-2 md:order-1 h-[400px] md:h-[600px] rounded-xl overflow-hidden soft-soil-shadow">
+<img alt="A baker in a brown apron gently holding a cooling rack of freshly baked madeleines by a sunlit window." class="w-full h-full object-cover" src="philosophy.jpg"/>
+</div>
+<div class="w-full md:w-1/2 order-1 md:order-2 flex flex-col gap-6">
+<span class="text-secondary font-label-md uppercase tracking-widest">OUR PHILOSOPHY</span>
+<h2 class="font-headline-md text-headline-md text-primary">心と身体、そして地球に優しい<br>丁寧なものづくり</h2>
+<p class="text-on-surface-variant font-body-md leading-relaxed">
+                    「hanauta（ハナウタ）」が大切にしているのは、ゆっくりと時間をかける丁寧な手仕事です。私たちが作るチョコレートや焼き菓子は、一つひとつに職人の想いと、自然の恵みがギュッと詰まっています。
+                </p>
+<p class="text-on-surface-variant font-body-md leading-relaxed">
+                    使用するオーガニックカカオや素材は、地球と真摯に向き合う生産者の方々から直接分けていただいたものばかり。パッケージには、100%再生紙で作られた堆肥化可能な素材を採用しています。美味しく、そして地球にも優しく。私たちが作ったお菓子を食べて、ふと優しい「鼻歌」がこぼれるような、心豊かなひとときをお届けします。
+                </p>
+</div>
+</div>
+</section>
+<!-- Monthly Specials (Grid Layout) -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto" id="specials">
+<div class="flex flex-col items-center mb-16 text-center gap-4">
+<h2 class="font-headline-md text-headline-md text-primary">今月のおすすめ</h2>
+<p class="text-on-surface-variant font-body-md max-w-2xl">季節の移ろいを感じる、今月だけの特別な味わいをお届けします。</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Product 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden border border-outline-variant/30 soft-soil-shadow group">
+<div class="h-64 overflow-hidden">
+<img alt="Botanical craft chocolate bar with intricate floral patterns stamped into the surface, resting on textured paper." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/ADBb0ug1p-YEFgF295jIWvlk-BVOXVSLXy2BcM2x7-U_f7WOiXulpQRPL9cwQ68DUJyo8Kne_dKe8xAHpOUSC6DlLBMEEpx-zUWzTN_bHyngX0rl3eFNGRSBFSLrW4Lql1IT7Ox3xS8qoXmmkz9j5XgIXAyPYWyS495VeMpf2If4b_rde2apfdWCr-M1MwYdbCZ2fv-Ixy1Pd24Ul-IFarYa_eUchcegGhKdinxc7vezdG28jgcpD27zw-8O8Yo"/>
+</div>
+<div class="p-6 flex flex-col gap-3">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-sm text-headline-sm text-primary">ボタニカル・クラフトチョコレート</h3>
+<span class="bg-secondary-container text-on-secondary-container font-label-md text-[10px] px-2 py-1 rounded-full uppercase">ヴィーガン</span>
+</div>
+<p class="text-on-surface-variant font-body-md text-sm">野草やエディブルフラワーをあしらった、美しいアートのような一枚。カカオ70%の奥深いコクと、華やかな香りの余韻をお楽しみください。</p>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden border border-outline-variant/30 soft-soil-shadow group">
+<div class="h-64 overflow-hidden">
+<img alt="A close-up, artistic photograph of a golden-brown honey madeleine with a perfect 'hump', sitting on a delicate ceramic plate." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/ADBb0ujrJra2SUpikC1eUQstVfNmDSaR1X_xmqnxtFbRe52bgV3BvWNQHUluFYL7G4h-qU3hDjPb7fRGk7lfFk8cc0KCwH_qAtpQnBR0cv-RxH3WHJoNmK6-0LtaNd8LuWGsmmpxvxrDfVLPHVYWLzrbe4uRTJNZ40ZsihyFCajQ7MhOI2YqcTUJuZkEJfbNbsMVxg_4msEmmaP9F1dHXI7RnGvUp5Rc42n4A-kfSZGGb_cRutTTLuFXPK2b_Ns"/>
+</div>
+<div class="p-6 flex flex-col gap-3">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-sm text-headline-sm text-primary">はちみつのマドレーヌ</h3>
+<span class="bg-surface-dim text-on-surface font-label-md text-[10px] px-2 py-1 rounded-full uppercase">地元産はちみつ</span>
+</div>
+<p class="text-on-surface-variant font-body-md text-sm">地元の養蜂場から届く、無添加の百花蜜をたっぷりと練り込みました。しっとりとした食感と、ふんわり広がる上品な甘さが特徴です。</p>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden border border-outline-variant/30 soft-soil-shadow group">
+<div class="h-64 overflow-hidden">
+<img alt="Organic granola with dark cacao nibs and dried fruits in a minimalist ceramic bowl." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWkjJKYW2H4OU0m3P7UMef-mPqPU2Ld7VwiZ5pPV78mqrTkLUL8sYCKu5VQnVW2dbFUR-y1zTY-JSl-TKWu9mu6yhLABmOk5bbYRrI6Y9XQySZwsvw-BQji2jjtfvn_86w2iYvN4VvK8ONpTjB0mnM9-9lRWDYbxsYDRzF6ElCJw9pDoTzU53rk6IGXfwzuzQM7RQMyPUawcQSwVpHrHhj41KgLnXs2nEvcylggVJJvts68g4fkik-FHJbQOUPPv9Iuuwp20ICh3c"/>
+</div>
+<div class="p-6 flex flex-col gap-3">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-sm text-headline-sm text-primary">カカオニブの自家製グラノーラ</h3>
+<span class="bg-secondary-container text-on-secondary-container font-label-md text-[10px] px-2 py-1 rounded-full uppercase">グルテンフリー</span>
+</div>
+<p class="text-on-surface-variant font-body-md text-sm">有機オーツ麦にメープルシロップと天日塩を合わせ、私たちのシグネチャーである香ばしいカカオニブを贅沢にブレンドして焼き上げました。</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Stories Section (Editorial Asymmetrical Layout) -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto" id="blog">
+<div class="flex flex-col items-center mb-16 text-center gap-4">
+<h2 class="font-headline-md text-headline-md text-primary">ハナウタの読みもの</h2>
+<p class="text-on-surface-variant font-body-md max-w-2xl">オーガニックお菓子のこと、素材のこと、そして日々の暮らしを少し豊かにするお話。</p>
+</div>
+<div class="flex flex-col gap-12 md:gap-24"><!-- Story 1: Image left, Text right -->
+<article class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center group">
+<div class="aspect-[4/3] rounded-xl overflow-hidden soft-soil-shadow bg-surface-variant">
+<img alt="Raw organic cacao beans in a rustic wooden bowl being sun-dried in a lush tropical landscape" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMZawXeOD00UMWPg3wOn1jSNUgumy9tGqk2rHBrz1lj618jjFZMQF7KLzuKIvehBllGrQWmYdUI_Jk0KNm7O3vJQqqM0D05WdGCo2UgruU5SqorHVjSLn30pZdcpiRgvjx-pPiCusl3uJoUqcpTBXzBH_o36EmFddwrSMRYwfP2V6oJT4wFESed9OT8_ztzUfDVKdn9Ag1DMGasdjS5dia4W90oKTMnvFHEwLq44_BQV2jarD1WVT9KNvLiIcy3XgE0ry-wABmMS4"/>
+</div>
+<div class="flex flex-col gap-6">
+<div class="flex flex-col gap-2">
+<span class="text-secondary font-label-md uppercase tracking-wider text-xs">素材の旅 — Ingredients</span>
+<h3 class="font-headline-lg text-headline-lg text-primary group-hover:text-primary transition-colors leading-tight">ベリーズの森から届く、<br class="hidden md:inline">オーガニックカカオの旅</h3>
+</div>
+<p class="text-on-surface-variant font-body-md">私たちのチョコレートの主役であるカカオ豆。中米ベリーズの豊かな自然の中で、太陽の光を浴びながら丁寧に発酵・乾燥されたカカオ豆が、私たちの手元に届くまでのストーリーをご紹介します。</p>
+<a class="text-primary font-label-md border-b border-primary/20 pb-1 hover:text-primary hover:border-primary transition-colors inline-flex items-center gap-2 w-fit" href="#">ストーリーを読む <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</article>
+<!-- Story 2: Text left, Image right -->
+<article class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center group">
+<div class="order-2 md:order-1 flex flex-col gap-6">
+<div class="flex flex-col gap-2">
+<span class="text-secondary font-label-md uppercase tracking-wider text-xs">技術 — Technique</span>
+<h3 class="font-headline-lg text-headline-lg text-primary group-hover:text-primary transition-colors leading-tight">おいしいコブの秘密。<br class="hidden md:inline">完璧なマドレーヌの焼き方</h3>
+</div>
+<p class="text-on-surface-variant font-body-md">ふっくらと焼き上がったマドレーヌの「コブ」は、美味しさの証。オーブンの温度管理と生地の寝かせ方に隠された、小さくて奥深い科学のお話です。</p>
+<a class="text-primary font-label-md border-b border-primary/20 pb-1 hover:text-primary hover:border-primary transition-colors inline-flex items-center gap-2 w-fit" href="#">ストーリーを読む <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<div class="order-1 md:order-2 aspect-[4/3] rounded-xl overflow-hidden soft-soil-shadow bg-surface-variant">
+<img alt="A golden-brown honey madeleine on a delicate ceramic plate with steam rising" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXYDxS8SpuE6cuTphYsvDKVYg1oEusDrUU1rwlrhfG5wfbz7E7BCZQMdv3bp1YgO0KhtutaBHKip0XfIw8K_xiu9YfSVrZpAqmpko4Q7bQLqUiWMwzkh5jrkf4YfsmkDfISQ2kPDwfSU0SSwT5OtXsXeePjwpvV8zCTBT8rBZPgy5wG8UJiTfFaB7Okjcf_tJ2imwZtlNGa6nFkU7GacCArZMUY92OXmoelIkw0jdgOjBb6Hg_p2TD9TaSYnIOWCkaQlcSfBmUAss"/>
+</div>
+</article>
+<!-- Story 3: Image left, Text right -->
+<article class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center group">
+<div class="aspect-[4/3] rounded-xl overflow-hidden soft-soil-shadow bg-surface-variant">
+<img alt="Hands gently kneading dough on a flour-dusted wooden table in a sunlit kitchen" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9-d71ynW0ui0VWw73x3N88chfquCRB47yHUnOfkxNlUOeP0QPuri8mnB5KbbFVTN2UiqhX6i2d-UXOeJlwtrGIX3LCiSyIL0AyUNxBpHSR63prtgRrIyQPHSNBSoR-LTWoMFZa8GReTdpk4nS-zcqZZmflTF69x_4SyY4-LDo7HQixNKHxTO2wCRWayWIuHGXzdDpONN502yhivpsuvmun_HZK5JsCJtdX4kN5SMF-R88CyCiUT7xmX33xtFg7NeP7JTlYhsdT1w"/>
+</div>
+<div class="flex flex-col gap-6">
+<div class="flex flex-col gap-2">
+<span class="text-secondary font-label-md uppercase tracking-wider text-xs">暮らし — Lifestyle</span>
+<h3 class="font-headline-lg text-headline-lg text-primary group-hover:text-primary transition-colors leading-tight">キッチンで整う。<br class="hidden md:inline">心と身体のリズム</h3>
+</div>
+<p class="text-on-surface-variant font-body-md">生地をこねたり、泡立て器を回したり。五感を使ってお菓子を作る時間は、忙しい日々の中で自分自身と向き合う「動く瞑想」のようでもあります。</p>
+<a class="text-primary font-label-md border-b border-primary/20 pb-1 hover:text-primary hover:border-primary transition-colors inline-flex items-center gap-2 w-fit" href="#">ストーリーを読む <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</article></div>
+<div class="mt-16 flex justify-center">
+<a class="text-primary font-label-md border-b border-primary pb-1 hover:text-[#F4A460] hover:border-[#F4A460] transition-colors inline-flex items-center gap-2" href="#">
+                すべての読みものを見る <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- Info & Access -->
+<section class="py-24 bg-surface-container" id="visit">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch">
+<!-- Left Info Block -->
+<div class="flex flex-col gap-8 justify-between">
+<div class="flex flex-col gap-6">
+<h2 class="font-headline-md text-headline-md text-primary">店舗情報</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div class="flex flex-col gap-2">
+<h4 class="font-label-md text-label-md text-primary uppercase">営業時間</h4>
+<p class="font-body-md text-on-surface-variant">水曜日 〜 日曜日<br/>11:00 - 18:00</p>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="font-label-md text-label-md text-primary uppercase">アクセス</h4>
+<p class="font-body-md text-on-surface-variant">〒123-456<br/>鼻歌県鼻歌市87-87（仮）</p>
+</div>
+</div>
+</div>
+<div class="w-full aspect-video md:aspect-auto md:flex-grow rounded-xl overflow-hidden soft-soil-shadow mb-4">
+<img alt="Interior of hanauta sweets &amp; cacao shop" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzKWJQAta-pPo7Gg940J4gUXM5E1C05X1IokiUzwbBxVSuy6_GXI0TH3yTKwh77QYnagRS1713Vad2tSN5V0_NKGkKA3VCkY2slq_DZsEDPyfvq1thZzGo_gwDG4UPXvo8h1HuvCK0t_4UiOHw3b0EikzhZAdPyiYKkfAtesx6zwiaGkMKYLq9Vyz9e0VaOfMEuzbI_OrfgCwzx3TOmPKmKvSdf-r_KIxwfBpK1L27IFQ5CnbcMemD3TkifN1gXx5hor5H3vwgs_0"/>
+</div>
+<div class="p-6 bg-surface-container-lowest border border-outline-variant/30 rounded-xl soft-soil-shadow">
+<h4 class="font-label-md text-label-md text-secondary mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">eco</span> マイバッグご持参のお願い
+                    </h4>
+<p class="font-body-md text-sm text-on-surface-variant">お買い物の際は、ぜひマイバッグをお持ちください。当店の包装紙やギフトボックスは、環境に配慮した100%再生紙を使用しており、土に還る素材で作られています。</p>
+</div>
+</div>
+<!-- Right Map Block -->
+<div class="min-h-[500px] bg-surface-variant rounded-xl overflow-hidden relative soft-soil-shadow">
+<iframe allowfullscreen="" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.083758364861!2d135.77610057635955!3d35.00336216719736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108ec73d09295%3A0xc3b8398d5786a32!2sMaruyama%20Park!5e0!3m2!1sen!2sjp!4v1715843234567!5m2!1sen!2sjp" style="border: 0px; filter: sepia(0.3) contrast(0.9) grayscale(0.2);" width="100%"></iframe>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="full-width border-t border-outline-variant/30 dark:border-outline/20" style="background-color: #5d4037;">
+<div class="py-16 px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto flex flex-col items-center gap-12">
+<!-- Newsletter -->
+<div class="w-full max-w-md flex flex-col items-center text-center gap-4">
+<h3 class="font-headline-sm text-headline-sm text-white">ハナウタの便りを受け取る</h3>
+<p class="font-label-md text-white/80">季節のお菓子や、丁寧な暮らしのヒントを定期的にお届けします。</p>
+<form class="w-full mt-2 flex gap-4 items-center">
+<input class="bg-white/10 border-b border-white/30 focus:border-white outline-none w-full font-body-md text-white placeholder:text-white/50 focus:ring-0 px-2 py-2 transition-colors" placeholder="メールアドレスを入力" type="email"/>
+<button class="bg-[#F4A460] text-primary-container font-label-md px-6 py-2 rounded-full hover:bg-[#e09355] transition-colors shrink-0" type="submit">購読する</button>
+</form>
+</div>
+<div class="w-full flex flex-col md:flex-row justify-between items-center gap-8 border-t border-outline-variant/20 pt-8">
+<a class="font-headline-md text-headline-md text-primary dark:text-primary-fixed opacity-80 hover:opacity-100 transition-opacity" href="#">
+<img alt="hanauta logo" class="h-6 w-6 object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida/ADBb0ujo3B9bFAUPSzexiDLu77vOVDc_N-73lv-cS5hwxH2sFpyfh6WosFGYwQ5f2hWrVXRA1jftRfs3X5BfMN_ATYqgcAN0LaAHFbtQG7LfsFAL-40uSJ6hZn_Md63lW3R-99I_UKMDArZvZRGkAlfh_Nznbag9q7Kuny7O02wAsFSNhQwg9_A6cr244g9PgrBFp38c01w8QZz14aIOtect5Lf22i90DdFxendws_Rz7zBhAfqckEaYcQ9JkQ"/>
+</a>
+<div class="flex gap-6">
+<a class="dark:text-on-surface-variant font-body-md hover:text-[#F4A460] transition-colors text-sm text-white/80" href="#">サステナビリティ</a>
+<a class="dark:text-on-surface-variant font-body-md hover:text-[#F4A460] transition-colors text-sm text-white/80" href="#">配送について</a>
+<a class="dark:text-on-surface-variant font-body-md hover:text-[#F4A460] transition-colors text-sm text-white/80" href="#">お問い合わせ</a>
+<a class="dark:text-on-surface-variant font-body-md hover:text-[#F4A460] transition-colors text-sm text-white/80" href="#">プライバシーポリシー</a>
+</div>
+<p class="font-label-md text-[12px] text-white/60">© 2024 hanauta sweets &amp; cacao. Crafted with mindfulness.</p>
+</div>
+</div>
+</footer>
+</body></html>
